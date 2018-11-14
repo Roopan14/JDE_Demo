@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.roopanc.jde_demo.MainActivity">
+    
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:src="@drawable/jdelogo"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+    
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <EditText
+            android:id="@+id/usernameET"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:hint="@string/user_name" />
+
+        <EditText
+            android:id="@+id/passwordET"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:textSize="20sp"
+            android:layout_below="@id/usernameET"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:hint="@string/password" />
+
+        <Button
+            android:id="@+id/nextBT"
+            android:layout_below="@id/passwordET"
+            android:layout_width="175dp"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/sign_in"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:visibility="invisible"
+        android:layout_below="@id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>
